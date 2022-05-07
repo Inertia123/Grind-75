@@ -1,0 +1,39 @@
+.footer{
+    padding: 8rem 2.2rem 4rem;
+    @media only screen and (max-width: 786px){
+        padding: 3rem 1rem 3rem;
+    }
+    h1{
+        @media only screen and (max-width: 786px){
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        font-size: 1.2rem;  
+        opacity: 0.6;
+        max-width: 50%;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+        @media only screen and (max-width: 600px){
+            max-width: 100%;
+        }
+    }
+    .mail{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        img{
+            height: 1.3rem;
+        }
+        a{
+            text-decoration: none;
+            letter-spacing: 0.05rem;
+        }
+    }
+    .copyText{
+        font-size: 1.05rem;
+        opacity: 0.2rem;
+        margin-top: 8rem;
+    }
+}

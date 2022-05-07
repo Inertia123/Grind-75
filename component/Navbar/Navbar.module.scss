@@ -1,0 +1,138 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  1.7rem 2.2rem;
+    @media only screen and (max-width: 786px){
+        padding: 1.5rem 1rem;
+        position: relative;
+    }
+    .logo{
+        a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color:#4F46E5;
+            @media only screen and (max-width: 786px){
+                font-size: 1.05rem;
+            }
+            // color: $Blue;
+            span{
+                color: black;
+                font-weight: 400;
+                font-size: 0.85rem;
+
+            }
+        }
+    }
+    @media only screen and (max-width: 786px) {
+        .hamMenu {
+            display: flex;
+            align-items: center;
+            justify-content: 
+            center;
+            z-index: 2;      
+            .ham {
+                width: 1.5rem;
+                aspect-ratio: 1;
+            }
+            .closeHam{
+                display: none;
+            }
+    
+            .cross {
+                width: 2rem;
+                aspect-ratio: 1;
+                display: none;
+            }
+            .openCross{
+                display: block;
+                width: 2.3rem;
+                aspect-ratio: 1;
+                padding-right: 1.2rem;
+            }
+        }
+    }
+    .navLinks{
+        @media only screen and (max-width: 786px){
+            box-shadow: 0px 0px 4px -3px #000000;
+            position: absolute;
+            top: 20%;
+            left: 4%;
+            background: rgb(255, 255, 255);
+            width: 92%;
+            padding:5rem 0 1.5rem 1rem;
+            border-radius: 0.5rem;
+            z-index: 1;
+            &::after{
+                content: 'GRIND 75';
+                color: #4F46E5;
+                font-size: 1.2rem;
+                font-weight: 700;
+                position: absolute;
+                top: 1.1rem;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            list-style: none;
+            @media only screen and (max-width: 786px){
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1  rem;
+            }
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 1.05rem;
+                    letter-spacing: 0.05rem;
+                    color: black;
+                }
+            }
+        }
+    }
+    .visible{
+        @media only screen and (max-width: 786px) {
+                display: none;
+                position: absolute;
+                top: 20%;
+                left: 2%;
+                background: rgb(209, 209, 209);
+                width: 96%;
+                padding: 5rem 0 1.5rem 1rem;
+        
+                &::after {
+                    content: 'GRIND 75';
+                    color: #4F46E5;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    position: absolute;
+                    top: 1.1rem;
+                }
+            }
+        
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                list-style: none;
+        
+                @media only screen and (max-width: 786px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1 rem;
+                }
+        
+                li {
+                    a {
+                        text-decoration: none;
+                        font-size: 1.05rem;
+                    }
+                }
+            }
+    }
+}
