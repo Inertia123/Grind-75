@@ -1,0 +1,45 @@
+.right{
+    flex: 17%;
+    @media only screen and (max-width: 786px){
+        display: none;
+    }
+    .content{
+        background: #36329e;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        &:hover {
+                background-color: #312E81;
+            }
+        &:nth-of-type(2){
+            background: #17d8c2;
+            &:hover{
+                background-color: #14B8A6;
+            }
+        }
+        &:nth-of-type(3){
+            background: #f1204d;
+            &:hover{
+                background-color: #ce2147;
+            }
+        }
+        &:nth-of-type(4){
+            background: #6366f1;
+            &:hover{
+                background-color: #5355c7;
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.8rem;
+            &:nth-of-type(2){
+                font-weight: 400;
+                font-size: 0.75rem;
+                line-height: 1.1rem;
+            }
+        }
+    }
+}
