@@ -1,0 +1,54 @@
+.element{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    .firstWrapper{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        .slNo{
+            h2{
+                font-size: 1.4rem;
+                font-weight: 400;
+                @media only screen and (max-width: 786px){
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .question{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 0.4rem;
+            h3{
+                color: #4F46E5;
+                font-weight: 400;
+                font-size: 1.05rem;
+            }
+            .innerWrap{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                p{
+                    font-size: 0.9rem;
+                    &:nth-of-type(1){
+                        color: #10B981;
+                    }
+                }
+            }
+        }
+    }
+    .tick{
+        img{
+            max-width: 100%;
+            height: 1.8rem;
+            opacity: 0.5;
+            transition: 10ms ease-in-out;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}

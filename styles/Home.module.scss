@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid rgb(209, 209, 209);
+    border-top: 0;
     @media only screen and (max-width: 786px){
         flex-direction: column;
     }
